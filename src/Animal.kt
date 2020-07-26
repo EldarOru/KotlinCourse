@@ -43,8 +43,14 @@ class Wolf : Canine(){
     override fun makeNoise() {
         println("Hoooowl!")
     }
-
     override fun eat() {
         println("The Wolf is eating $food")
+    }
+}
+
+fun main() {
+    var animalList = listOf(Wolf(),Hippo())
+    for (animal in animalList){
+        animal.eat()
     }
 }

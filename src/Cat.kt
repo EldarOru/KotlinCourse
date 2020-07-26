@@ -1,4 +1,4 @@
-class Cat(val name: String, weight_param: Int, breed_param: String) {
+class CatBig(val name: String, weight_param: Int, breed_param: String) {
 
     var activities = arrayOf("Play")
     val breed = breed_param.toUpperCase()
@@ -17,7 +17,7 @@ class Cat(val name: String, weight_param: Int, breed_param: String) {
 }
 
 fun main() {
-    var myCat = Cat("Matilda", 4, "MIXED")
+    var myCat = CatBig("Matilda", 4, "MIXED")
     println("Моего кота зовут ${myCat.name}, он весит ${myCat.weight}")
     myCat.weight = -1
     println("Моего кота зовут ${myCat.name}, он весит ${myCat.weight}")
